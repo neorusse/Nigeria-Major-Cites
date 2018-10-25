@@ -102,12 +102,6 @@ p {
   }
 }
 
-/* ---- Banner Section ---- */
-
-.banner {
-  border-top: 2px dotted $color-styling;
-}
-
 /* ---- Main Content Section ---- */
 
 blockquote {
@@ -178,8 +172,6 @@ blockquote:before {
 
 /* ---- Tablet Styles ---- */
 
-/* ---- Desktop Styles ---- */
-
 @media screen and (min-width: 641px) {
   .main-nav {
     @include flex;
@@ -205,5 +197,20 @@ blockquote:before {
 
   h2 {
     text-align: center;
+  }
+}
+
+/* ---- Desktop Styles ---- */
+
+@media screen and (min-width: 960px) {
+  body {
+    padding-top: 75px;
+  }
+  .main-header {
+    position: fixed;
+    background: $white;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+    width: 100%;
+    top: 0;
   }
 }
