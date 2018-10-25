@@ -165,3 +165,71 @@ blockquote:before {
   background: $color-styling;
   border-radius: 0.35em;
 }
+
+/* ---- Footer Section ---- */
+
+.main-footer {
+  color: $white;
+  background-color: $color-styling;
+}
+
+/* ================================= 
+      Media Queries
+    ==================================== */
+
+/* ---- Mobile Styles ---- */
+
+@media screen and (max-width: 500px) {
+  .container {
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  .site-logo {
+    font-size: 1.1em;
+  }
+
+  .main-nav a {
+    font-size: 1em;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 17px;
+  }
+}
+
+/* ---- Tablet Styles ---- */
+
+/* ---- Desktop Styles ---- */
+
+@media screen and (min-width: 641px) {
+  .main-nav {
+    @include flex;
+  }
+
+  .main-content {
+    @include flex;
+  }
+
+  .flex-header-wrapper {
+    @include flex;
+    justify-content: space-between;
+  }
+
+  .flex-main-wrapper {
+    @include flex;
+    flex-wrap: wrap;
+  }
+
+  .col {
+    flex: 1 50%;
+  }
+
+  h2 {
+    text-align: center;
+  }
+}
