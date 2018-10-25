@@ -4,8 +4,8 @@
   "description": "A Site that Promotes Nigeria Major Cities",
   "main": "index.js",
   "dependencies": {
-    "gulp-sass": "^4.0.2",
-    "gulp": "^3.9.1"
+    "gulp": "^3.9.1",
+    "gulp-sass": "^4.0.2"
   },
   "devDependencies": {},
   "scripts": {
