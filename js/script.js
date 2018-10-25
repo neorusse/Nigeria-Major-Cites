@@ -1,3 +1,6 @@
+// Global Variable
+let slideIndex = 0;
+
 // IFFE Init Call to functions
 (function init() {
     // Call image Carousel 
