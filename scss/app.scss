@@ -6,3 +6,73 @@ $white: #fff;
 
 $font-stack-base: Georgia, "Times New Roman", Times, serif;
 $font-stack-heading: Arial, Helvetica, sans-serif;
+
+// Mixins =================================
+
+@mixin style-reset {
+  margin: 0;
+  padding: 0;
+}
+
+@mixin item-positioning {
+  text-align: center;
+  display: block;
+  padding: 10px 15px;
+}
+
+@mixin flex {
+  display: flex;
+}
+
+/* ================================= 
+  Base Element Styles
+==================================== */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: $font-stack-base;
+  font-size: 18px;
+  color: $color-base;
+  line-height: 1.5;
+  border: 0;
+  @include style-reset;
+}
+
+h1,
+h2,
+h3 {
+  font-family: $font-stack-heading;
+  font-weight: bold;
+  color: $color-base;
+}
+
+ul {
+  @include style-reset;
+  list-style: none;
+}
+
+a {
+  color: $color-styling;
+  font-weight: bold;
+  text-decoration: none;
+  :hover {
+    text-decoration: none;
+    color: $color-base;
+  }
+}
+
+img {
+  max-width: 100%;
+}
+
+p {
+  text-align: justify;
+}
