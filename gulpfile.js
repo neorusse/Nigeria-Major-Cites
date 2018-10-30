@@ -50,7 +50,7 @@ gulp.task("clean", function() {
 
 gulp.task("build", ['minifyScripts', 'compileSass'], function() {
   return gulp.src(["css/app.css", "js/app.min.js", "index.html", "img/**"], { base: "./"})
-  .pipe(gulp.dest("dist"));
+  .pipe(gulp.dest("docs"));
 });
 
 gulp.task("serve", ["watchFiles"]);
