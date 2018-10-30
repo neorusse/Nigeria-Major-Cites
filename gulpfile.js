@@ -45,7 +45,7 @@ gulp.task("watchFiles", function() {
 })
 
 gulp.task("clean", function() {
-  del(["dist", "css/app.css*", "js/app*.js*"]);
+  del(["docs", "css/app.css*", "js/app*.js*"]);
 });
 
 gulp.task("build", ['minifyScripts', 'compileSass'], function() {
