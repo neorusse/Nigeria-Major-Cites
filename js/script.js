@@ -13,7 +13,7 @@ let slideIndex = 0;
 // Function to displays Image Carousel
 function imageCarousel() {
     let i;
-    let images = document.getElementsByClassName("img-slides");
+    let images = document.getElementsByClassName("banner__img-slides");
     for (i = 0; i < images.length; i++) {
       images[i].style.display = "none"; 
     }
